@@ -1,7 +1,7 @@
 -- Create PDB
 CREATE PLUGGABLE DATABASE "ONLINE_SHOP_PDB" ADMIN USER "SUPER_ADMIN" IDENTIFIED BY "kamel"
   FILE_NAME_CONVERT=(
-    'C:\app\kamel\product\21c\oradata\XE\pdbseed', 'C:\app\kamel\product\21c\oradata\XE\ONLINE_SHOP_PDB'
+    'C:\app\Administrator\product\21c\oradata\XE\pdbseed', 'C:\app\Administrator\product\21c\oradata\XE\ONLINE_SHOP_PDB'
   )
   STORAGE UNLIMITED TEMPFILE REUSE;
 
@@ -18,5 +18,5 @@ ALTER SESSION SET CONTAINER = ONLINE_SHOP_PDB;
 -- Create TS
 CREATE TABLESPACE ONLINE_SHOP_TS
     DATAFILE
-        'C:\app\kamel\product\21c\oradata\XE\ONLINE_SHOP_PDB\ONLINE_SHOP_TS.DBF'
+        'C:\app\Administrator\product\21c\oradata\XE\ONLINE_SHOP_PDB\ONLINE_SHOP_TS.DBF'
         SIZE 1048576000 AUTOEXTEND ON NEXT 1153433600 MAXSIZE UNLIMITED;
