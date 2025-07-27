@@ -1,5 +1,5 @@
 -- Create PDB
-CREATE PLUGGABLE DATABASE "ONLINE_SHOP_PDB" ADMIN USER "SUPER_ADMIN" IDENTIFIED BY "kamel"
+CREATE PLUGGABLE DATABASE "ONLINE_SHOP_PDB" ADMIN USER "SUPER_ADMIN" IDENTIFIED BY "password"
   FILE_NAME_CONVERT=(
     'C:\app\Administrator\product\21c\oradata\XE\pdbseed', 'C:\app\Administrator\product\21c\oradata\XE\ONLINE_SHOP_PDB'
   )

@@ -2,11 +2,10 @@
 setlocal
 
 REM Define connection info
-set SYS_CONN=sys/kamel@localhost:1521/xe as sysdba
+set SYS_CONN=sys@localhost:1521/xe as sysdba
 set DEV_USER=SHOP_DEV
-set DEV_PASS=kamel
 set PDB_NAME=ONLINE_SHOP_PDB
-set DEV_CONN=%DEV_USER%/%DEV_PASS%@localhost:1521/%PDB_NAME%
+set DEV_CONN=%DEV_USER%@localhost:1521/%PDB_NAME%
 
 echo Starting DB setup...
 

@@ -34,6 +34,7 @@ CREATE TABLE customers (
 CREATE TABLE products (
     product_id  NUMBER PRIMARY KEY,
     name        VARCHAR2(100) NOT NULL,
+    image       VARCHAR2(100),
     price       NUMBER(10,2) CHECK (price > 0),
     category_id NUMBER REFERENCES product_categories(category_id),
     weight      NUMBER(6,2) CHECK (weight > 0),
