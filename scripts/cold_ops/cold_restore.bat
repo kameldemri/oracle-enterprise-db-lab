@@ -9,8 +9,7 @@ set CONFIG_DIR=%ORACLE_BASE%\database
 
 REM === ASK FOR TIMESTAMP TO RESTORE ===
 set /p RESTORE_TAG=Enter the backup timestamp folder name (e.g., 2025-07-16_23-40-52): 
-set BACKUP_DIR=%BASE_COLD_
-BACKUP_DIR%\%RESTORE_TAG%
+set BACKUP_DIR=%BASE_COLD_BACKUP_DIR%\%RESTORE_TAG%
 
 REM === VALIDATION ===
 if not exist "%BACKUP_DIR%" (
