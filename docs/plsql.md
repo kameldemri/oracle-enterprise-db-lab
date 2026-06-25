@@ -1,6 +1,6 @@
 # PL/SQL Procedures & Triggers Overview
 
-This module contains the procedural and reactive logic of the Oracle Online Shop Database. It focuses on data generation, lifecycle automation, and system integrity enforcement.
+This module contains the procedural and reactive logic used in `oracle-enterprise-db-lab`. It focuses on data generation, lifecycle automation, and system integrity enforcement (using an online shop sample domain).
 
 ---
 

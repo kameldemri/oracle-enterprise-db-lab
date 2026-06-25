@@ -1,6 +1,6 @@
 # Data Model Overview
 
-This document outlines the core relational design of the Oracle Online Shop Database, emphasizing scalability, clean engineering practices, and production-readiness.
+This document outlines the core relational design used in `oracle-enterprise-db-lab`, emphasizing scalability, clean engineering practices, and production-readiness (with an online shop sample domain).
 
 The model is structured to support:
 

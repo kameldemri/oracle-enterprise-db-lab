@@ -1,6 +1,6 @@
 # Oracle Backup & Restore Guide
 
-This document covers the key strategies and scripts used to manage **cold backups**, **Data Pump exports**, and **pluggable database (PDB) cloning** for the Oracle Online Shop Database.
+This document covers the key strategies and scripts used to manage **cold backups**, **Data Pump exports**, and **pluggable database (PDB) cloning** for `oracle-enterprise-db-lab`.
 
 ## 1. Data Pump Exports (`expdp`)
 

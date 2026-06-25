@@ -1,12 +1,12 @@
 # Scripts
 
-This document describes the core scripts used to automate database setup, backup, cloning, and restoration for the Oracle Online Shop Database.
+This document describes the core scripts used to automate database setup, backup, cloning, and restoration for `oracle-enterprise-db-lab`.
 
 ---
 
-## 1. Environment Setup `setup.bat`
+## 1. Environment Setup (`setup.bat` / `setup.sh`)
 
-Main batch file for initializing a fresh database environment from scratch.
+Main setup script for initializing a fresh database environment from scratch.
 
 ### Responsibilities:
 
@@ -25,13 +25,13 @@ Main batch file for initializing a fresh database environment from scratch.
 
 ## 2. Cold Backup Scripts
 
-### `cold_backup.bat`
+### `cold_backup.bat` / `cold_backup.sh`
 
 * Gracefully shuts down the database
 * Copies all physical `.DBF`, `.CTL`, and `.LOG` files into a timestamped backup folder
 * Also backs up the Oracle config directory
 
-### `cold_restore.bat`
+### `cold_restore.bat` / `cold_restore.sh`
 
 * Prompts the user for a timestamped folder name
 * Shuts down the database and restores all cold backup files
@@ -89,6 +89,7 @@ CREATE OR REPLACE DIRECTORY full_cdb_exp_dir    AS 'Z:\data_pump\full_cdb';
 
 ## Notes
 
-* All batch scripts are Windows-native and assume default Oracle 21c installation layout.
-* You must have `sqlplus` in PATH or properly referenced inside scripts.
-* Execute all scripts with admin privileges for full access to DB files.
+* Windows batch scripts (`.bat`) are preserved for Windows workflows.
+* Bash scripts (`.sh`) are provided for Linux users and keep the same **logic and SQL order** where applicable.
+* You must have `sqlplus` in PATH (or adjust your environment accordingly).
+* Cold backup/restore requires filesystem access to Oracle data/config directories (typically privileged).
